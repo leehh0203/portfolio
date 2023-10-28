@@ -54,12 +54,31 @@
             .info-box{
                 display: flex;
                 flex-direction: column;
+                gap: 0.5em;
                 a{
                     @include desktop{ font-size: 1em; }
                     @include tablets{ font-size: 1.2em; }
                     @include mobile{
                         font-size: 4em;
                         line-height: 1.5;
+                    }
+                }
+                .sns-list{
+                    display: flex;
+                    margin-top: 1em;
+                    gap: 1em;
+
+                    @include mobile{ gap: 3em;margin-top: 2em; }
+                    a{
+                        // border: 1px solid rgba(255, 255, 255, 0.1);
+                        // padding: 0.3em;
+                        border-radius: 100em;
+                        img{
+                            width: 2em;
+                            filter: invert(100%);
+
+                            @include mobile{ width: 1.6em; }
+                        }
                     }
                 }
 
