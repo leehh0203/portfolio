@@ -1430,6 +1430,9 @@ body a {
   letter-spacing: -0.025em;
   color: #bbbbbb;
 }
+.sc-mainproject .inner-sticky .group-item .cont .group-bottom p span {
+  color: #ffffff;
+}
 @media (max-width: 1023px) {
   .sc-mainproject .inner-sticky .group-item .cont .group-bottom p {
     font-size: 1.3em;

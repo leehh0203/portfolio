@@ -330,6 +330,9 @@
                         line-height: 1.92;
                         letter-spacing: -0.025em;
                         color: #bbbbbb;
+                        span{
+                            color: #ffffff;
+                        }
 
                         @include tablets{font-size: 1.3em;}
                         @include mobile{ font-size: 3.7em;line-height: 1.4; width: 80%;margin-top: 0.8em; }
