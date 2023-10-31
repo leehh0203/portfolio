@@ -150,11 +150,6 @@ body a {
   opacity: 0;
   pointer-events: none;
 }
-@media (max-width: 767px) {
-  .curser-wrap {
-    display: none;
-  }
-}
 .curser-wrap .curser-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,6 +171,12 @@ body a {
   background-color: #2ed06e;
   border-radius: 3em;
 }
+@media (max-width: 767px) {
+  .curser-wrap .curser-inner .cursor {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
 .curser-wrap .curser-inner i {
   position: absolute;
   width: 2.5em;
@@ -185,6 +186,11 @@ body a {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 3em;
   opacity: 0;
+}
+@media (max-width: 767px) {
+  .curser-wrap .curser-inner i {
+    display: none;
+  }
 }
 .curser-wrap .learn-more {
   display: -webkit-box;
@@ -206,6 +212,11 @@ body a {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1.5em;
   opacity: 0;
+}
+@media (max-width: 767px) {
+  .curser-wrap .learn-more {
+    display: none;
+  }
 }
 .curser-wrap .learn-more span {
   letter-spacing: 0.02em;
@@ -516,6 +527,7 @@ body a {
     color: #fff;
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: none;
   }
   .m-gnb-wrap .m-gnb button .btn {
     display: -webkit-box;

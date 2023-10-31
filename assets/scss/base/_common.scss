@@ -16,9 +16,7 @@
     pointer-events: none;
     // mix-blend-mode: difference;
 
-    @include mobile{
-        display: none;
-    }
+    // @include mobile{ display: none; }
 
     .curser-inner{
         display: flex;
@@ -26,6 +24,7 @@
         justify-content: center;
         width: 2.5em;
         height: 2.5em;
+        
         .cursor{
             position: relative;
             z-index: 2;
@@ -33,6 +32,11 @@
             height: 1em;
             background-color:$main-color;
             border-radius: 3em;
+
+            @include mobile{ 
+                width: 3.5em;
+                height: 3.5em;
+            }
         }
         i{
             position: absolute;
@@ -42,6 +46,8 @@
             background-color: rgba(255,255,255,.1);
             border-radius: 3em;
             opacity: 0;
+
+            @include mobile{ display: none; }
         }
 
     }
@@ -58,6 +64,9 @@
         background-color: rgba(255,255,255,.1);
         border-radius: 1.5em;
         opacity: 0;
+
+        @include mobile{ display: none; }
+
         span{
             letter-spacing: .02em;
             font-size: .8em;

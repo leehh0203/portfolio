@@ -72,7 +72,7 @@ $(document).mousemove(function(e){
 
 //마우스 a태그 호버시
 const customCursor2 = document.querySelector(".curser-wrap .cursor");
-$('body a').hover(function(){
+$('body a,body button').hover(function(){
     gsap.to(customCursor2,0.1,{ scale:0.3 });
 },function(){
      gsap.to(customCursor2,0.1,{ scale:1 });
