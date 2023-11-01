@@ -4,24 +4,13 @@ const lenis = new Lenis()
 lenis.on('scroll', ScrollTrigger.update)
 
 gsap.ticker.add((time)=>{
-  lenis.raf(time * 500)
+  lenis.raf(time * 1000)
 })
 
 gsap.ticker.lagSmoothing(0)
 
 
-
-//gnb클릭시 해당 영역으로 이동
-// //pc
-// $('.gnb a').click(function(e) {
-//   const target = $(this).attr('href'); // 클릭된 링크의 href 속성을 가져옵니다.
-//   $('html, body').animate({ scrollTop: $(target).offset().top }, 1000); // 해당 섹션으로 스크롤
-// });
-// //mobile
-// $('.header a').click(function(e) {
-//   const target = $(this).attr('href'); // 클릭된 링크의 href 속성을 가져옵니다.
-//   $('html, body').animate({ scrollTop: $(target).offset().top }, 1000); // 해당 섹션으로 스크롤
-// });
+//a태그 클릭시 부드럽게 이동
 function getSamePageAnchor (link) {
   if (
     link.protocol !== window.location.protocol ||
