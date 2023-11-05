@@ -1561,10 +1561,10 @@ body a {
           transform: translateY(100%);
 }
 @media (max-width: 767px) {
-  .sc-mainproject .inner-sticky ._1 h3 {
+  .sc-mainproject .inner-sticky ._4 h3 {
     font-size: 9em !important;
   }
-  .sc-mainproject .inner-sticky ._1 .serif {
+  .sc-mainproject .inner-sticky ._4 .serif {
     font-size: 0.722em !important;
   }
 }
